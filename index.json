@@ -49,9 +49,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1793949333,
+          "publishTimestamp": 1793950063,
           "source": {
-            "type": "npm"
+            "type": "git",
+            "url": "https://github.com/nanwu98/dsh-desktop-autostart-win",
+            "commit": "64edc5065a307843d130abaa80a340e969432ed1"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0"
