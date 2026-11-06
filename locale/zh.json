@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "开机自启",
+    "description": "在设置中增加「开机自启」页面，自动找到已安装的 DeepSeek Harness 桌面版，并开启或关闭当前用户的 Windows 登录启动项。",
+    "detail": "README.zh.md"
+  },
+  "section": {
+    "title": "开机自启",
+    "description": "登录 Windows 后自动启动桌面版。"
+  }
+}

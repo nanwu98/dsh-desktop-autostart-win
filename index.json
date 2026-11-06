@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "title": {
+    "en": "nanwu98 DSH plugins",
+    "zh": "nanwu98 的 DSH 插件"
+  },
+  "description": {
+    "en": "Plugins for DeepSeek Harness maintained by nanwu98.",
+    "zh": "nanwu98 维护的 DeepSeek Harness 插件。"
+  },
+  "metadata": {
+    "categories": {
+      "system": {
+        "title": {
+          "en": "System",
+          "zh": "系统"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-desktop-autostart-win",
+      "title": {
+        "en": "Startup",
+        "zh": "开机自启"
+      },
+      "description": {
+        "en": "Windows sign-in autostart for the DeepSeek Harness desktop app, with automatic detection of the installed app.",
+        "zh": "让 DeepSeek Harness 桌面版随 Windows 登录自动启动，自动找到已安装的桌面版。"
+      },
+      "icon": "icon.svg",
+      "author": "nanwu98",
+      "homepage": "https://github.com/nanwu98/dsh-desktop-autostart-win#readme",
+      "repository": {
+        "url": "https://github.com/nanwu98/dsh-desktop-autostart-win"
+      },
+      "metadata": {
+        "category": "system",
+        "keywords": [
+          "autostart",
+          "windows",
+          "startup"
+        ],
+        "labels": []
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793949333,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

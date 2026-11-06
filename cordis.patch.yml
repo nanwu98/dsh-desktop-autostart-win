@@ -1,0 +1,14 @@
+# dsh-desktop-autostart-win bundle patch.
+#
+# One Host row owns both faces of this bundle: `index.js` serves the startup
+# API on the profile's web server, and the `dsh.client` manifest in
+# package.json loads `client.js`, which registers the standalone "Startup"
+# page into `settings.section` plus its sidebar glyph.
+#
+# No config: the Windows startup entry is the only stored state, so a value in
+# cordis.patch.yml would be a second copy that can drift from what Windows
+# actually starts.
+
+- insert:
+    - id: desktop-autostart
+      name: 'dsh-desktop-autostart-win'

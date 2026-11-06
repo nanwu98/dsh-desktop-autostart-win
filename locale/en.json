@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Startup",
+    "description": "Adds a Startup page to Settings that finds the installed DeepSeek Harness desktop app and turns the current user's Windows sign-in startup entry on or off."
+  },
+  "section": {
+    "title": "Startup",
+    "description": "Open the desktop app automatically after you sign in to Windows."
+  }
+}
