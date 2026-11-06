@@ -16,11 +16,7 @@ Windows 实际会执行的东西。
 需要 **DSH 0.2.2-rc.1 或更新的 0.2.x**，以及 **Windows 10/11**。下面的
 `desktop` 换成你实际启动 DSH 用的 profile 名。
 
-### 从 npm 安装
-
-```sh
-dsh plugin --profile desktop add dsh-desktop-autostart-win
-```
+本包只从 GitHub 分发，暂未发布到 npm。
 
 ### 从 GitHub 安装
 
@@ -36,10 +32,18 @@ dsh plugin --profile desktop add github:nanwu98/dsh-desktop-autostart-win
 dsh plugin --profile desktop add github:nanwu98/dsh-desktop-autostart-win#v1.0.0
 ```
 
+### 从 Release 的 tgz 安装
+
+不需要 Git：
+
+```sh
+dsh plugin --profile desktop add https://github.com/nanwu98/dsh-desktop-autostart-win/releases/download/v1.0.0/dsh-desktop-autostart-win-1.0.0.tgz
+```
+
 ### 从插件页安装
 
-打开 **插件 → 添加插件**，粘贴包名 `dsh-desktop-autostart-win` 或仓库地址安装。
-如果页面提示需要重启 DSH，重启后打开 **设置 → 开机自启**。
+打开 **插件 → 添加插件**，粘贴仓库地址或 Release 的 tgz 地址（只填包名只对已发布到
+npm 的包有效）。如果页面提示需要重启 DSH，重启后打开 **设置 → 开机自启**。
 
 ## 桌面版是怎么找到的
 
@@ -115,8 +119,10 @@ npm test
 
 本仓库同时发布一份 format-1 插件索引，可以被内置的「发现」页读取：
 
-- `https://raw.githubusercontent.com/nanwu98/dsh-desktop-autostart-win/main/index.json`
-- jsDelivr 镜像：`https://cdn.jsdelivr.net/gh/nanwu98/dsh-desktop-autostart-win@main/index.json`
+- jsDelivr（推荐，`raw.githubusercontent.com` 被墙时也能用）：
+  `https://cdn.jsdelivr.net/gh/nanwu98/dsh-desktop-autostart-win@main/index.json`
+- GitHub raw：
+  `https://raw.githubusercontent.com/nanwu98/dsh-desktop-autostart-win/main/index.json`
 
 在 **插件 → 发现 → 索引源 → 添加索引源** 里填入上面的地址即可。当前 DSH 版本需要
 先启用实验性的 `plugin-market` 组合包，「发现」页才会出现。

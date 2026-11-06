@@ -16,11 +16,7 @@ state, so the page always reports what Windows will actually run.
 Requires **DSH 0.2.2-rc.1 or newer** (0.2.x) and **Windows 10/11**. Replace
 `desktop` with the profile you actually start DSH with.
 
-### From npm
-
-```sh
-dsh plugin --profile desktop add dsh-desktop-autostart-win
-```
+This package is distributed from GitHub; there is no npm release.
 
 ### From GitHub
 
@@ -37,11 +33,19 @@ Pin a release with `#v1.0.0`:
 dsh plugin --profile desktop add github:nanwu98/dsh-desktop-autostart-win#v1.0.0
 ```
 
+### From the release tarball
+
+No Git needed:
+
+```sh
+dsh plugin --profile desktop add https://github.com/nanwu98/dsh-desktop-autostart-win/releases/download/v1.0.0/dsh-desktop-autostart-win-1.0.0.tgz
+```
+
 ### From the plugin page
 
-Open **插件 → 添加插件**, paste the package name
-`dsh-desktop-autostart-win` or the repository URL, and install. Restart DSH if
-the page asks for it; then open **设置 → 开机自启**.
+Open **插件 → 添加插件**, paste the repository URL or the release tarball URL
+(a bare package name only works for registry packages), and install. Restart
+DSH if the page asks for it; then open **设置 → 开机自启**.
 
 ## How the app is found
 
@@ -131,8 +135,9 @@ real registry.
 This repository also publishes a format-1 plugin index, so the package can be
 discovered from the built-in **Discover** tab:
 
-- `https://raw.githubusercontent.com/nanwu98/dsh-desktop-autostart-win/main/index.json`
-- jsDelivr mirror: `https://cdn.jsdelivr.net/gh/nanwu98/dsh-desktop-autostart-win@main/index.json`
+- jsDelivr (recommended; works on networks where `raw.githubusercontent.com`
+  is blocked): `https://cdn.jsdelivr.net/gh/nanwu98/dsh-desktop-autostart-win@main/index.json`
+- raw GitHub: `https://raw.githubusercontent.com/nanwu98/dsh-desktop-autostart-win/main/index.json`
 
 Add it under **插件 → 发现 → 索引源 → 添加索引源**. The Discover tab needs the
 experimental `plugin-market` bundle enabled in this DSH release.
